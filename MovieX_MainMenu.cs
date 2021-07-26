@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MovieX
 {
-    public partial class Form1 : Form
+    public partial class MovieX_MainMenu : Form
     {
-        public Form1()
+        public MovieX_MainMenu()
         {
             InitializeComponent();
         }
