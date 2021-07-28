@@ -63,9 +63,79 @@ namespace MovieX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MovieX_TicketIcon {
+        internal static System.Drawing.Bitmap MovieX_HoveredExitIcon {
             get {
-                object obj = ResourceManager.GetObject("MovieX_TicketIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("MovieX_HoveredExitIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredMaximizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredMaximizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredMinimizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredMinimizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredTicketIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredTicketIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredExitIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredExitIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredMaximizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredMaximizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredMinimizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredMinimizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredTicketIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredTicketIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

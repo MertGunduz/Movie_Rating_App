@@ -81,7 +81,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MovieX_TicketIcon.png" />
+    <None Include="Resources\MovieX_HoveredTicketIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredTicketIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredExitIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredMaximizeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredMinimizeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredExitIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredMaximizeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredMinimizeIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

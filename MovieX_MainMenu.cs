@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MovieX.Properties;
 
 namespace MovieX
 {
@@ -15,6 +16,60 @@ namespace MovieX
         public MovieX_MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void LogoHeader_Label_MouseEnter(object sender, EventArgs e)
+        {
+            TopLogo_PictureBox.Image = Resources.MovieX_HoveredTicketIcon;
+            LogoHeader_Label.ForeColor = Color.FromArgb(84, 206, 111);
+        }
+
+        private void LogoHeader_Label_MouseLeave(object sender, EventArgs e)
+        {
+            TopLogo_PictureBox.Image = Resources.MovieX_NonHoveredTicketIcon;
+            LogoHeader_Label.ForeColor = Color.FromArgb(64, 186, 91);
+        }
+
+        private void TopLogo_PictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            TopLogo_PictureBox.Image = Resources.MovieX_HoveredTicketIcon;
+            LogoHeader_Label.ForeColor = Color.FromArgb(84, 206, 111);
+        }
+
+        private void TopLogo_PictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            TopLogo_PictureBox.Image = Resources.MovieX_NonHoveredTicketIcon;
+            LogoHeader_Label.ForeColor = Color.FromArgb(64, 186, 91);
+        }
+
+        private void Exit_Button_MouseEnter(object sender, EventArgs e)
+        {
+            Exit_Button.Image = Resources.MovieX_HoveredExitIcon;
+        }
+
+        private void Exit_Button_MouseLeave(object sender, EventArgs e)
+        {
+            Exit_Button.Image = Resources.MovieX_NonHoveredExitIcon;
+        }
+
+        private void Maximize_Button_MouseEnter(object sender, EventArgs e)
+        {
+            Maximize_Button.Image = Resources.MovieX_HoveredMaximizeIcon;
+        }
+
+        private void Maximize_Button_MouseLeave(object sender, EventArgs e)
+        {
+            Maximize_Button.Image = Resources.MovieX_NonHoveredMaximizeIcon;
+        }
+
+        private void Minimize_Button_MouseEnter(object sender, EventArgs e)
+        {
+            Minimize_Button.Image = Resources.MovieX_HoveredMinimizeIcon;
+        }
+
+        private void Minimize_Button_MouseLeave(object sender, EventArgs e)
+        {
+            Minimize_Button.Image = Resources.MovieX_NonHoveredMinimizeIcon;
         }
     }
 }
