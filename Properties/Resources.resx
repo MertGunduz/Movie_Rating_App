@@ -121,11 +121,23 @@
   <data name="MovieX_HoveredExitIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredExitIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MovieX_HoveredHomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_HoveredHomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MovieX_HoveredMaximizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredMaximizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MovieX_HoveredMinimizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredMinimizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_HoveredRatingIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_HoveredRatingIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_HoveredSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_HoveredSettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_HoveredStatisticsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_HoveredStatisticsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MovieX_HoveredTicketIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredTicketIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +145,23 @@
   <data name="MovieX_NonHoveredExitIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredExitIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MovieX_NonHoveredHomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_NonHoveredHomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MovieX_NonHoveredMaximizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredMaximizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MovieX_NonHoveredMinimizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredMinimizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_NonHoveredRatingIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_NonHoveredRatingIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_NonHoveredSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_NonHoveredSettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_NonHoveredStatisticsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_NonHoveredStatisticsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MovieX_NonHoveredTicketIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredTicketIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

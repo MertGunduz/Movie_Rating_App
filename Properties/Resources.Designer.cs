@@ -73,6 +73,16 @@ namespace MovieX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredHomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredHomeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MovieX_HoveredMaximizeIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieX_HoveredMaximizeIcon", resourceCulture);
@@ -86,6 +96,36 @@ namespace MovieX.Properties {
         internal static System.Drawing.Bitmap MovieX_HoveredMinimizeIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieX_HoveredMinimizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredRatingIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredRatingIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredSettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredSettingsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredStatisticsIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredStatisticsIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +153,16 @@ namespace MovieX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredHomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredHomeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MovieX_NonHoveredMaximizeIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieX_NonHoveredMaximizeIcon", resourceCulture);
@@ -126,6 +176,36 @@ namespace MovieX.Properties {
         internal static System.Drawing.Bitmap MovieX_NonHoveredMinimizeIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieX_NonHoveredMinimizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredRatingIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredRatingIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredSettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredSettingsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredStatisticsIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredStatisticsIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

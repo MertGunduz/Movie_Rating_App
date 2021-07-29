@@ -39,14 +39,17 @@ namespace MovieX
             this.WindowState_Panel = new System.Windows.Forms.Panel();
             this.TopLogo_Panel = new System.Windows.Forms.Panel();
             this.LogoHeader_Label = new System.Windows.Forms.Label();
-            this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
             this.WindowStateBottom_Panel = new System.Windows.Forms.Panel();
             this.WindowStateTop_Panel = new System.Windows.Forms.Panel();
+            this.Navigation_Panel = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Home_Button = new System.Windows.Forms.Button();
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.Maximize_Button = new System.Windows.Forms.Button();
             this.Exit_Button = new System.Windows.Forms.Button();
-            this.Home_Button = new System.Windows.Forms.Button();
-            this.Navigation_Panel = new System.Windows.Forms.Panel();
+            this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
             this.Mid_Panel.SuspendLayout();
             this.Mid_ExpandPanel.SuspendLayout();
             this.Left_Panel.SuspendLayout();
@@ -100,6 +103,9 @@ namespace MovieX
             // Left_ExpandPanel
             // 
             this.Left_ExpandPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.Left_ExpandPanel.Controls.Add(this.button4);
+            this.Left_ExpandPanel.Controls.Add(this.button2);
+            this.Left_ExpandPanel.Controls.Add(this.button1);
             this.Left_ExpandPanel.Controls.Add(this.Navigation_Panel);
             this.Left_ExpandPanel.Controls.Add(this.Home_Button);
             this.Left_ExpandPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -164,19 +170,6 @@ namespace MovieX
             this.LogoHeader_Label.MouseEnter += new System.EventHandler(this.LogoHeader_Label_MouseEnter);
             this.LogoHeader_Label.MouseLeave += new System.EventHandler(this.LogoHeader_Label_MouseLeave);
             // 
-            // TopLogo_PictureBox
-            // 
-            this.TopLogo_PictureBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo_PictureBox.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredTicketIcon;
-            this.TopLogo_PictureBox.Location = new System.Drawing.Point(0, 0);
-            this.TopLogo_PictureBox.Name = "TopLogo_PictureBox";
-            this.TopLogo_PictureBox.Size = new System.Drawing.Size(40, 63);
-            this.TopLogo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.TopLogo_PictureBox.TabIndex = 2;
-            this.TopLogo_PictureBox.TabStop = false;
-            this.TopLogo_PictureBox.MouseEnter += new System.EventHandler(this.TopLogo_PictureBox_MouseEnter);
-            this.TopLogo_PictureBox.MouseLeave += new System.EventHandler(this.TopLogo_PictureBox_MouseLeave);
-            // 
             // WindowStateBottom_Panel
             // 
             this.WindowStateBottom_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -192,6 +185,86 @@ namespace MovieX
             this.WindowStateTop_Panel.Name = "WindowStateTop_Panel";
             this.WindowStateTop_Panel.Size = new System.Drawing.Size(125, 15);
             this.WindowStateTop_Panel.TabIndex = 1;
+            // 
+            // Navigation_Panel
+            // 
+            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.Navigation_Panel.Location = new System.Drawing.Point(1, 0);
+            this.Navigation_Panel.Name = "Navigation_Panel";
+            this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
+            this.Navigation_Panel.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredSettingsIcon;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(0, 587);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.button4.Size = new System.Drawing.Size(200, 50);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Settings";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredStatisticsIcon;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(0, 100);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.button2.Size = new System.Drawing.Size(200, 50);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "My Statistics";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredRatingIcon;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(0, 50);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.button1.Size = new System.Drawing.Size(200, 50);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "My Ratings";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // Home_Button
+            // 
+            this.Home_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.Home_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Home_Button.FlatAppearance.BorderSize = 0;
+            this.Home_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Home_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Home_Button.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredHomeIcon;
+            this.Home_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Home_Button.Location = new System.Drawing.Point(0, 0);
+            this.Home_Button.Name = "Home_Button";
+            this.Home_Button.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.Home_Button.Size = new System.Drawing.Size(200, 50);
+            this.Home_Button.TabIndex = 0;
+            this.Home_Button.Text = "Home";
+            this.Home_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Home_Button.UseVisualStyleBackColor = false;
             // 
             // Minimize_Button
             // 
@@ -247,30 +320,18 @@ namespace MovieX
             this.Exit_Button.MouseEnter += new System.EventHandler(this.Exit_Button_MouseEnter);
             this.Exit_Button.MouseLeave += new System.EventHandler(this.Exit_Button_MouseLeave);
             // 
-            // Home_Button
+            // TopLogo_PictureBox
             // 
-            this.Home_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.Home_Button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Home_Button.FlatAppearance.BorderSize = 0;
-            this.Home_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Home_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Home_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Home_Button.Location = new System.Drawing.Point(0, 0);
-            this.Home_Button.Name = "Home_Button";
-            this.Home_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.Home_Button.Size = new System.Drawing.Size(200, 50);
-            this.Home_Button.TabIndex = 0;
-            this.Home_Button.Text = "Home";
-            this.Home_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Home_Button.UseVisualStyleBackColor = false;
-            // 
-            // Navigation_Panel
-            // 
-            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.Navigation_Panel.Location = new System.Drawing.Point(1, 0);
-            this.Navigation_Panel.Name = "Navigation_Panel";
-            this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
-            this.Navigation_Panel.TabIndex = 1;
+            this.TopLogo_PictureBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TopLogo_PictureBox.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredTicketIcon;
+            this.TopLogo_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.TopLogo_PictureBox.Name = "TopLogo_PictureBox";
+            this.TopLogo_PictureBox.Size = new System.Drawing.Size(40, 63);
+            this.TopLogo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.TopLogo_PictureBox.TabIndex = 2;
+            this.TopLogo_PictureBox.TabStop = false;
+            this.TopLogo_PictureBox.MouseEnter += new System.EventHandler(this.TopLogo_PictureBox_MouseEnter);
+            this.TopLogo_PictureBox.MouseLeave += new System.EventHandler(this.TopLogo_PictureBox_MouseLeave);
             // 
             // MovieX_MainMenu
             // 
@@ -316,6 +377,9 @@ namespace MovieX
         private System.Windows.Forms.Panel WindowStateBottom_Panel;
         private System.Windows.Forms.Panel Navigation_Panel;
         private System.Windows.Forms.Button Home_Button;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

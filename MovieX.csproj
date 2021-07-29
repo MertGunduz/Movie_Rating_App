@@ -104,5 +104,29 @@
   <ItemGroup>
     <None Include="Resources\MovieX_NonHoveredMinimizeIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredHomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredHomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredSettingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredSettingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredRatingIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredRatingIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredStatisticsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredStatisticsIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
