@@ -71,5 +71,42 @@ namespace MovieX
         {
             Minimize_Button.Image = Resources.MovieX_NonHoveredMinimizeIcon;
         }
+
+        private void Exit_Button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Maximize_Button_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void Home_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MyRatings_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MyStatistics_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Settings_Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
