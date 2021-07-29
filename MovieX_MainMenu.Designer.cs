@@ -60,11 +60,21 @@ namespace MovieX
             this.BottomBorder_ExpandPanel = new System.Windows.Forms.Panel();
             this.MidContainer_Panel = new System.Windows.Forms.Panel();
             this.MidContainer_ExpandPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.LeftContainer_Panel = new System.Windows.Forms.Panel();
+            this.MidContainterSeperator_Panel = new System.Windows.Forms.Panel();
+            this.RightContainer_Panel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.LeftContainerExpand_Panel = new System.Windows.Forms.Panel();
+            this.RightContainerExpand_Panel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MovieBrowser = new System.Windows.Forms.WebBrowser();
             this.Mid_Panel.SuspendLayout();
             this.Mid_ExpandPanel.SuspendLayout();
             this.MidUserControl_Panel.SuspendLayout();
@@ -81,7 +91,12 @@ namespace MovieX
             this.BottomBorder_Panel.SuspendLayout();
             this.MidContainer_Panel.SuspendLayout();
             this.MidContainer_ExpandPanel.SuspendLayout();
+            this.LeftContainer_Panel.SuspendLayout();
+            this.RightContainer_Panel.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.LeftContainerExpand_Panel.SuspendLayout();
+            this.RightContainerExpand_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Mid_Panel
@@ -448,46 +463,48 @@ namespace MovieX
             // 
             this.MidContainer_ExpandPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.MidContainer_ExpandPanel.Controls.Add(this.panel4);
-            this.MidContainer_ExpandPanel.Controls.Add(this.panel2);
-            this.MidContainer_ExpandPanel.Controls.Add(this.panel1);
+            this.MidContainer_ExpandPanel.Controls.Add(this.MidContainterSeperator_Panel);
+            this.MidContainer_ExpandPanel.Controls.Add(this.LeftContainer_Panel);
             this.MidContainer_ExpandPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MidContainer_ExpandPanel.Location = new System.Drawing.Point(0, 0);
             this.MidContainer_ExpandPanel.Name = "MidContainer_ExpandPanel";
             this.MidContainer_ExpandPanel.Size = new System.Drawing.Size(880, 617);
             this.MidContainer_ExpandPanel.TabIndex = 0;
             // 
-            // panel1
+            // LeftContainer_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(435, 617);
-            this.panel1.TabIndex = 0;
+            this.LeftContainer_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.LeftContainer_Panel.Controls.Add(this.LeftContainerExpand_Panel);
+            this.LeftContainer_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftContainer_Panel.Location = new System.Drawing.Point(0, 0);
+            this.LeftContainer_Panel.Name = "LeftContainer_Panel";
+            this.LeftContainer_Panel.Size = new System.Drawing.Size(435, 617);
+            this.LeftContainer_Panel.TabIndex = 0;
             // 
-            // panel2
+            // MidContainterSeperator_Panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(435, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 617);
-            this.panel2.TabIndex = 1;
+            this.MidContainterSeperator_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.MidContainterSeperator_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MidContainterSeperator_Panel.Location = new System.Drawing.Point(435, 0);
+            this.MidContainterSeperator_Panel.Name = "MidContainterSeperator_Panel";
+            this.MidContainterSeperator_Panel.Size = new System.Drawing.Size(10, 617);
+            this.MidContainterSeperator_Panel.TabIndex = 1;
             // 
-            // panel3
+            // RightContainer_Panel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(435, 617);
-            this.panel3.TabIndex = 0;
+            this.RightContainer_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.RightContainer_Panel.Controls.Add(this.RightContainerExpand_Panel);
+            this.RightContainer_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RightContainer_Panel.Location = new System.Drawing.Point(0, 0);
+            this.RightContainer_Panel.Name = "RightContainer_Panel";
+            this.RightContainer_Panel.Size = new System.Drawing.Size(435, 617);
+            this.RightContainer_Panel.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.RightContainer_Panel);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(445, 0);
             this.panel4.Name = "panel4";
@@ -502,6 +519,115 @@ namespace MovieX
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 617);
             this.panel5.TabIndex = 1;
+            // 
+            // LeftContainerExpand_Panel
+            // 
+            this.LeftContainerExpand_Panel.Controls.Add(this.dataGridView1);
+            this.LeftContainerExpand_Panel.Controls.Add(this.button1);
+            this.LeftContainerExpand_Panel.Controls.Add(this.textBox5);
+            this.LeftContainerExpand_Panel.Controls.Add(this.textBox4);
+            this.LeftContainerExpand_Panel.Controls.Add(this.textBox3);
+            this.LeftContainerExpand_Panel.Controls.Add(this.textBox2);
+            this.LeftContainerExpand_Panel.Controls.Add(this.textBox1);
+            this.LeftContainerExpand_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LeftContainerExpand_Panel.Location = new System.Drawing.Point(0, 0);
+            this.LeftContainerExpand_Panel.Name = "LeftContainerExpand_Panel";
+            this.LeftContainerExpand_Panel.Size = new System.Drawing.Size(435, 617);
+            this.LeftContainerExpand_Panel.TabIndex = 0;
+            // 
+            // RightContainerExpand_Panel
+            // 
+            this.RightContainerExpand_Panel.Controls.Add(this.MovieBrowser);
+            this.RightContainerExpand_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RightContainerExpand_Panel.Location = new System.Drawing.Point(0, 0);
+            this.RightContainerExpand_Panel.Name = "RightContainerExpand_Panel";
+            this.RightContainerExpand_Panel.Size = new System.Drawing.Size(435, 617);
+            this.RightContainerExpand_Panel.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.textBox1.Location = new System.Drawing.Point(16, 290);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(402, 27);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "  Movie Name:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.textBox2.Location = new System.Drawing.Point(16, 346);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(402, 27);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "  Movie Category:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.textBox3.Location = new System.Drawing.Point(16, 402);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(402, 27);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "  Movie URL:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.textBox4.Location = new System.Drawing.Point(16, 458);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(402, 27);
+            this.textBox4.TabIndex = 3;
+            this.textBox4.Text = "  Movie Watched:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.textBox5.Location = new System.Drawing.Point(16, 514);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(402, 27);
+            this.textBox5.TabIndex = 4;
+            this.textBox5.Text = "  Movie Rating:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(16, 570);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(402, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(435, 266);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // MovieBrowser
+            // 
+            this.MovieBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MovieBrowser.Location = new System.Drawing.Point(0, 0);
+            this.MovieBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.MovieBrowser.Name = "MovieBrowser";
+            this.MovieBrowser.Size = new System.Drawing.Size(435, 617);
+            this.MovieBrowser.TabIndex = 0;
             // 
             // MovieX_MainMenu
             // 
@@ -530,7 +656,13 @@ namespace MovieX
             this.BottomBorder_Panel.ResumeLayout(false);
             this.MidContainer_Panel.ResumeLayout(false);
             this.MidContainer_ExpandPanel.ResumeLayout(false);
+            this.LeftContainer_Panel.ResumeLayout(false);
+            this.RightContainer_Panel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.LeftContainerExpand_Panel.ResumeLayout(false);
+            this.LeftContainerExpand_Panel.PerformLayout();
+            this.RightContainerExpand_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -568,11 +700,21 @@ namespace MovieX
         private System.Windows.Forms.Panel BottomBorder_ExpandPanel;
         private System.Windows.Forms.Panel MidContainer_Panel;
         private System.Windows.Forms.Panel MidContainer_ExpandPanel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel LeftContainer_Panel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel RightContainer_Panel;
+        private System.Windows.Forms.Panel MidContainterSeperator_Panel;
+        private System.Windows.Forms.Panel RightContainerExpand_Panel;
+        private System.Windows.Forms.Panel LeftContainerExpand_Panel;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.WebBrowser MovieBrowser;
     }
 }
 
