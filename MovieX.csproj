@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovieXDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieXDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MovieX_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +72,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="MovieXDataSet.xsc">
+      <DependentUpon>MovieXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MovieXDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieXDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieXDataSet.xss">
+      <DependentUpon>MovieXDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MovieX_NonHoveredStatisticsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_HoveredAddMovieIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieX_NonHoveredAddMovieIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
