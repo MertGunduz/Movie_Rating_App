@@ -127,9 +127,6 @@
   <data name="MovieX_HoveredHomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredHomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MovieX_HoveredMaximizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MovieX_HoveredMaximizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MovieX_HoveredMinimizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredMinimizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,9 +150,6 @@
   </data>
   <data name="MovieX_NonHoveredHomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredHomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MovieX_NonHoveredMaximizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MovieX_NonHoveredMaximizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MovieX_NonHoveredMinimizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredMinimizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
