@@ -30,10 +30,10 @@ namespace MovieX
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieX_MainMenu));
             this.Mid_Panel = new System.Windows.Forms.Panel();
             this.Mid_ExpandPanel = new System.Windows.Forms.Panel();
@@ -56,7 +56,6 @@ namespace MovieX
             this.moviePersonalRatingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movieXMovieTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.movieXDataSet = new MovieX.MovieXDataSet();
-            this.AddMovie_Button = new System.Windows.Forms.Button();
             this.MovieRating_TextBox = new System.Windows.Forms.TextBox();
             this.MovieWatched_TextBox = new System.Windows.Forms.TextBox();
             this.MovieURL_TextBox = new System.Windows.Forms.TextBox();
@@ -71,26 +70,27 @@ namespace MovieX
             this.Left_Panel = new System.Windows.Forms.Panel();
             this.Left_ExpandPanel = new System.Windows.Forms.Panel();
             this.Navigation_Panel = new System.Windows.Forms.Panel();
-            this.Settings_Button = new System.Windows.Forms.Button();
-            this.MyStatistics_Button = new System.Windows.Forms.Button();
-            this.MyRatings_Button = new System.Windows.Forms.Button();
-            this.Home_Button = new System.Windows.Forms.Button();
             this.Top_Panel = new System.Windows.Forms.Panel();
             this.Top_ExpandPanel = new System.Windows.Forms.Panel();
             this.WindowState_Panel = new System.Windows.Forms.Panel();
-            this.Minimize_Button = new System.Windows.Forms.Button();
-            this.Exit_Button = new System.Windows.Forms.Button();
             this.WindowStateTop_Panel = new System.Windows.Forms.Panel();
             this.WindowStateBottom_Panel = new System.Windows.Forms.Panel();
             this.TopLogo_Panel = new System.Windows.Forms.Panel();
             this.LogoHeader_Label = new System.Windows.Forms.Label();
-            this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
             this.movieX_MovieTableTableAdapter = new MovieX.MovieXDataSetTableAdapters.MovieX_MovieTableTableAdapter();
             this.Movie_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelLeftBorder_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelRightBorder_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelTopBorder_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelBottomBorder_Panel = new System.Windows.Forms.Panel();
+            this.AddMovie_Button = new System.Windows.Forms.Button();
+            this.Settings_Button = new System.Windows.Forms.Button();
+            this.MyStatistics_Button = new System.Windows.Forms.Button();
+            this.MyRatings_Button = new System.Windows.Forms.Button();
+            this.Home_Button = new System.Windows.Forms.Button();
+            this.Minimize_Button = new System.Windows.Forms.Button();
+            this.Exit_Button = new System.Windows.Forms.Button();
+            this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
             this.Mid_Panel.SuspendLayout();
             this.Mid_ExpandPanel.SuspendLayout();
             this.MidUserControl_Panel.SuspendLayout();
@@ -113,8 +113,8 @@ namespace MovieX
             this.Top_ExpandPanel.SuspendLayout();
             this.WindowState_Panel.SuspendLayout();
             this.TopLogo_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TopLogo_PictureBox)).BeginInit();
             this.Movie_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TopLogo_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Mid_Panel
@@ -252,14 +252,14 @@ namespace MovieX
             this.Movies_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Movies_DataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Movies_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Movies_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Movies_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Movies_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Movies_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.movieIDDataGridViewTextBoxColumn,
@@ -269,29 +269,29 @@ namespace MovieX
             this.movieWatchedDataGridViewCheckBoxColumn,
             this.moviePersonalRatingDataGridViewTextBoxColumn});
             this.Movies_DataGridView.DataSource = this.movieXMovieTableBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Movies_DataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Movies_DataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.Movies_DataGridView.Dock = System.Windows.Forms.DockStyle.Top;
             this.Movies_DataGridView.EnableHeadersVisualStyles = false;
             this.Movies_DataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
             this.Movies_DataGridView.Location = new System.Drawing.Point(0, 0);
             this.Movies_DataGridView.Name = "Movies_DataGridView";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Movies_DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.Movies_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Movies_DataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.Movies_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Movies_DataGridView.Size = new System.Drawing.Size(435, 266);
             this.Movies_DataGridView.TabIndex = 6;
             this.Movies_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Movies_DataGridView_CellClick);
@@ -342,28 +342,6 @@ namespace MovieX
             // 
             this.movieXDataSet.DataSetName = "MovieXDataSet";
             this.movieXDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // AddMovie_Button
-            // 
-            this.AddMovie_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.AddMovie_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddMovie_Button.FlatAppearance.BorderSize = 0;
-            this.AddMovie_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.AddMovie_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.AddMovie_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddMovie_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AddMovie_Button.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredAddMovieIcon;
-            this.AddMovie_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AddMovie_Button.Location = new System.Drawing.Point(16, 555);
-            this.AddMovie_Button.Name = "AddMovie_Button";
-            this.AddMovie_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.AddMovie_Button.Size = new System.Drawing.Size(402, 40);
-            this.AddMovie_Button.TabIndex = 5;
-            this.AddMovie_Button.Text = "Add Movie";
-            this.AddMovie_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddMovie_Button.UseVisualStyleBackColor = false;
-            this.AddMovie_Button.MouseEnter += new System.EventHandler(this.AddMovie_Button_MouseEnter);
-            this.AddMovie_Button.MouseLeave += new System.EventHandler(this.AddMovie_Button_MouseLeave);
             // 
             // MovieRating_TextBox
             // 
@@ -512,6 +490,154 @@ namespace MovieX
             this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
             this.Navigation_Panel.TabIndex = 6;
             // 
+            // Top_Panel
+            // 
+            this.Top_Panel.Controls.Add(this.Top_ExpandPanel);
+            this.Top_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Top_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Top_Panel.Name = "Top_Panel";
+            this.Top_Panel.Size = new System.Drawing.Size(1100, 63);
+            this.Top_Panel.TabIndex = 1;
+            // 
+            // Top_ExpandPanel
+            // 
+            this.Top_ExpandPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.Top_ExpandPanel.Controls.Add(this.WindowState_Panel);
+            this.Top_ExpandPanel.Controls.Add(this.TopLogo_Panel);
+            this.Top_ExpandPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Top_ExpandPanel.Location = new System.Drawing.Point(0, 0);
+            this.Top_ExpandPanel.Name = "Top_ExpandPanel";
+            this.Top_ExpandPanel.Size = new System.Drawing.Size(1100, 63);
+            this.Top_ExpandPanel.TabIndex = 0;
+            // 
+            // WindowState_Panel
+            // 
+            this.WindowState_Panel.Controls.Add(this.Minimize_Button);
+            this.WindowState_Panel.Controls.Add(this.Exit_Button);
+            this.WindowState_Panel.Controls.Add(this.WindowStateTop_Panel);
+            this.WindowState_Panel.Controls.Add(this.WindowStateBottom_Panel);
+            this.WindowState_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.WindowState_Panel.Location = new System.Drawing.Point(1020, 0);
+            this.WindowState_Panel.Name = "WindowState_Panel";
+            this.WindowState_Panel.Size = new System.Drawing.Size(80, 63);
+            this.WindowState_Panel.TabIndex = 1;
+            // 
+            // WindowStateTop_Panel
+            // 
+            this.WindowStateTop_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WindowStateTop_Panel.Location = new System.Drawing.Point(0, 0);
+            this.WindowStateTop_Panel.Name = "WindowStateTop_Panel";
+            this.WindowStateTop_Panel.Size = new System.Drawing.Size(80, 15);
+            this.WindowStateTop_Panel.TabIndex = 1;
+            // 
+            // WindowStateBottom_Panel
+            // 
+            this.WindowStateBottom_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.WindowStateBottom_Panel.Location = new System.Drawing.Point(0, 48);
+            this.WindowStateBottom_Panel.Name = "WindowStateBottom_Panel";
+            this.WindowStateBottom_Panel.Size = new System.Drawing.Size(80, 15);
+            this.WindowStateBottom_Panel.TabIndex = 0;
+            // 
+            // TopLogo_Panel
+            // 
+            this.TopLogo_Panel.Controls.Add(this.LogoHeader_Label);
+            this.TopLogo_Panel.Controls.Add(this.TopLogo_PictureBox);
+            this.TopLogo_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TopLogo_Panel.Location = new System.Drawing.Point(0, 0);
+            this.TopLogo_Panel.Name = "TopLogo_Panel";
+            this.TopLogo_Panel.Size = new System.Drawing.Size(200, 63);
+            this.TopLogo_Panel.TabIndex = 0;
+            // 
+            // LogoHeader_Label
+            // 
+            this.LogoHeader_Label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LogoHeader_Label.Location = new System.Drawing.Point(40, 0);
+            this.LogoHeader_Label.Name = "LogoHeader_Label";
+            this.LogoHeader_Label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.LogoHeader_Label.Size = new System.Drawing.Size(160, 63);
+            this.LogoHeader_Label.TabIndex = 3;
+            this.LogoHeader_Label.Text = "MovieX";
+            this.LogoHeader_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LogoHeader_Label.MouseEnter += new System.EventHandler(this.LogoHeader_Label_MouseEnter);
+            this.LogoHeader_Label.MouseLeave += new System.EventHandler(this.LogoHeader_Label_MouseLeave);
+            // 
+            // movieX_MovieTableTableAdapter
+            // 
+            this.movieX_MovieTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // Movie_Panel
+            // 
+            this.Movie_Panel.Controls.Add(this.MoviePanelBottomBorder_Panel);
+            this.Movie_Panel.Controls.Add(this.MoviePanelTopBorder_Panel);
+            this.Movie_Panel.Controls.Add(this.MoviePanelRightBorder_Panel);
+            this.Movie_Panel.Controls.Add(this.MoviePanelLeftBorder_Panel);
+            this.Movie_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Movie_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Movie_Panel.Name = "Movie_Panel";
+            this.Movie_Panel.Size = new System.Drawing.Size(435, 617);
+            this.Movie_Panel.TabIndex = 1;
+            this.Movie_Panel.MouseEnter += new System.EventHandler(this.Movie_Panel_MouseEnter);
+            this.Movie_Panel.MouseLeave += new System.EventHandler(this.Movie_Panel_MouseLeave);
+            // 
+            // MoviePanelLeftBorder_Panel
+            // 
+            this.MoviePanelLeftBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.MoviePanelLeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MoviePanelLeftBorder_Panel.Location = new System.Drawing.Point(0, 0);
+            this.MoviePanelLeftBorder_Panel.Name = "MoviePanelLeftBorder_Panel";
+            this.MoviePanelLeftBorder_Panel.Size = new System.Drawing.Size(2, 617);
+            this.MoviePanelLeftBorder_Panel.TabIndex = 0;
+            // 
+            // MoviePanelRightBorder_Panel
+            // 
+            this.MoviePanelRightBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.MoviePanelRightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MoviePanelRightBorder_Panel.Location = new System.Drawing.Point(433, 0);
+            this.MoviePanelRightBorder_Panel.Name = "MoviePanelRightBorder_Panel";
+            this.MoviePanelRightBorder_Panel.Size = new System.Drawing.Size(2, 617);
+            this.MoviePanelRightBorder_Panel.TabIndex = 1;
+            // 
+            // MoviePanelTopBorder_Panel
+            // 
+            this.MoviePanelTopBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.MoviePanelTopBorder_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MoviePanelTopBorder_Panel.Location = new System.Drawing.Point(2, 0);
+            this.MoviePanelTopBorder_Panel.Name = "MoviePanelTopBorder_Panel";
+            this.MoviePanelTopBorder_Panel.Size = new System.Drawing.Size(431, 2);
+            this.MoviePanelTopBorder_Panel.TabIndex = 2;
+            // 
+            // MoviePanelBottomBorder_Panel
+            // 
+            this.MoviePanelBottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.MoviePanelBottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.MoviePanelBottomBorder_Panel.Location = new System.Drawing.Point(2, 615);
+            this.MoviePanelBottomBorder_Panel.Name = "MoviePanelBottomBorder_Panel";
+            this.MoviePanelBottomBorder_Panel.Size = new System.Drawing.Size(431, 2);
+            this.MoviePanelBottomBorder_Panel.TabIndex = 3;
+            // 
+            // AddMovie_Button
+            // 
+            this.AddMovie_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.AddMovie_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddMovie_Button.FlatAppearance.BorderSize = 0;
+            this.AddMovie_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.AddMovie_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.AddMovie_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddMovie_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.AddMovie_Button.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredAddMovieIcon;
+            this.AddMovie_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddMovie_Button.Location = new System.Drawing.Point(16, 555);
+            this.AddMovie_Button.Name = "AddMovie_Button";
+            this.AddMovie_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.AddMovie_Button.Size = new System.Drawing.Size(402, 40);
+            this.AddMovie_Button.TabIndex = 5;
+            this.AddMovie_Button.Text = "Add Movie";
+            this.AddMovie_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddMovie_Button.UseVisualStyleBackColor = false;
+            this.AddMovie_Button.Click += new System.EventHandler(this.AddMovie_Button_Click);
+            this.AddMovie_Button.MouseEnter += new System.EventHandler(this.AddMovie_Button_MouseEnter);
+            this.AddMovie_Button.MouseLeave += new System.EventHandler(this.AddMovie_Button_MouseLeave);
+            // 
             // Settings_Button
             // 
             this.Settings_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -600,38 +726,6 @@ namespace MovieX
             this.Home_Button.MouseEnter += new System.EventHandler(this.Home_Button_MouseEnter);
             this.Home_Button.MouseLeave += new System.EventHandler(this.Home_Button_MouseLeave);
             // 
-            // Top_Panel
-            // 
-            this.Top_Panel.Controls.Add(this.Top_ExpandPanel);
-            this.Top_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Top_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Top_Panel.Name = "Top_Panel";
-            this.Top_Panel.Size = new System.Drawing.Size(1100, 63);
-            this.Top_Panel.TabIndex = 1;
-            // 
-            // Top_ExpandPanel
-            // 
-            this.Top_ExpandPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.Top_ExpandPanel.Controls.Add(this.WindowState_Panel);
-            this.Top_ExpandPanel.Controls.Add(this.TopLogo_Panel);
-            this.Top_ExpandPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Top_ExpandPanel.Location = new System.Drawing.Point(0, 0);
-            this.Top_ExpandPanel.Name = "Top_ExpandPanel";
-            this.Top_ExpandPanel.Size = new System.Drawing.Size(1100, 63);
-            this.Top_ExpandPanel.TabIndex = 0;
-            // 
-            // WindowState_Panel
-            // 
-            this.WindowState_Panel.Controls.Add(this.Minimize_Button);
-            this.WindowState_Panel.Controls.Add(this.Exit_Button);
-            this.WindowState_Panel.Controls.Add(this.WindowStateTop_Panel);
-            this.WindowState_Panel.Controls.Add(this.WindowStateBottom_Panel);
-            this.WindowState_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.WindowState_Panel.Location = new System.Drawing.Point(1020, 0);
-            this.WindowState_Panel.Name = "WindowState_Panel";
-            this.WindowState_Panel.Size = new System.Drawing.Size(80, 63);
-            this.WindowState_Panel.TabIndex = 1;
-            // 
             // Minimize_Button
             // 
             this.Minimize_Button.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -670,45 +764,6 @@ namespace MovieX
             this.Exit_Button.MouseEnter += new System.EventHandler(this.Exit_Button_MouseEnter);
             this.Exit_Button.MouseLeave += new System.EventHandler(this.Exit_Button_MouseLeave);
             // 
-            // WindowStateTop_Panel
-            // 
-            this.WindowStateTop_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WindowStateTop_Panel.Location = new System.Drawing.Point(0, 0);
-            this.WindowStateTop_Panel.Name = "WindowStateTop_Panel";
-            this.WindowStateTop_Panel.Size = new System.Drawing.Size(80, 15);
-            this.WindowStateTop_Panel.TabIndex = 1;
-            // 
-            // WindowStateBottom_Panel
-            // 
-            this.WindowStateBottom_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.WindowStateBottom_Panel.Location = new System.Drawing.Point(0, 48);
-            this.WindowStateBottom_Panel.Name = "WindowStateBottom_Panel";
-            this.WindowStateBottom_Panel.Size = new System.Drawing.Size(80, 15);
-            this.WindowStateBottom_Panel.TabIndex = 0;
-            // 
-            // TopLogo_Panel
-            // 
-            this.TopLogo_Panel.Controls.Add(this.LogoHeader_Label);
-            this.TopLogo_Panel.Controls.Add(this.TopLogo_PictureBox);
-            this.TopLogo_Panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TopLogo_Panel.Location = new System.Drawing.Point(0, 0);
-            this.TopLogo_Panel.Name = "TopLogo_Panel";
-            this.TopLogo_Panel.Size = new System.Drawing.Size(200, 63);
-            this.TopLogo_Panel.TabIndex = 0;
-            // 
-            // LogoHeader_Label
-            // 
-            this.LogoHeader_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogoHeader_Label.Location = new System.Drawing.Point(40, 0);
-            this.LogoHeader_Label.Name = "LogoHeader_Label";
-            this.LogoHeader_Label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.LogoHeader_Label.Size = new System.Drawing.Size(160, 63);
-            this.LogoHeader_Label.TabIndex = 3;
-            this.LogoHeader_Label.Text = "MovieX";
-            this.LogoHeader_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LogoHeader_Label.MouseEnter += new System.EventHandler(this.LogoHeader_Label_MouseEnter);
-            this.LogoHeader_Label.MouseLeave += new System.EventHandler(this.LogoHeader_Label_MouseLeave);
-            // 
             // TopLogo_PictureBox
             // 
             this.TopLogo_PictureBox.Dock = System.Windows.Forms.DockStyle.Left;
@@ -721,60 +776,6 @@ namespace MovieX
             this.TopLogo_PictureBox.TabStop = false;
             this.TopLogo_PictureBox.MouseEnter += new System.EventHandler(this.TopLogo_PictureBox_MouseEnter);
             this.TopLogo_PictureBox.MouseLeave += new System.EventHandler(this.TopLogo_PictureBox_MouseLeave);
-            // 
-            // movieX_MovieTableTableAdapter
-            // 
-            this.movieX_MovieTableTableAdapter.ClearBeforeFill = true;
-            // 
-            // Movie_Panel
-            // 
-            this.Movie_Panel.Controls.Add(this.MoviePanelBottomBorder_Panel);
-            this.Movie_Panel.Controls.Add(this.MoviePanelTopBorder_Panel);
-            this.Movie_Panel.Controls.Add(this.MoviePanelRightBorder_Panel);
-            this.Movie_Panel.Controls.Add(this.MoviePanelLeftBorder_Panel);
-            this.Movie_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Movie_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Movie_Panel.Name = "Movie_Panel";
-            this.Movie_Panel.Size = new System.Drawing.Size(435, 617);
-            this.Movie_Panel.TabIndex = 1;
-            this.Movie_Panel.MouseEnter += new System.EventHandler(this.Movie_Panel_MouseEnter);
-            this.Movie_Panel.MouseLeave += new System.EventHandler(this.Movie_Panel_MouseLeave);
-            // 
-            // MoviePanelLeftBorder_Panel
-            // 
-            this.MoviePanelLeftBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.MoviePanelLeftBorder_Panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MoviePanelLeftBorder_Panel.Location = new System.Drawing.Point(0, 0);
-            this.MoviePanelLeftBorder_Panel.Name = "MoviePanelLeftBorder_Panel";
-            this.MoviePanelLeftBorder_Panel.Size = new System.Drawing.Size(2, 617);
-            this.MoviePanelLeftBorder_Panel.TabIndex = 0;
-            // 
-            // MoviePanelRightBorder_Panel
-            // 
-            this.MoviePanelRightBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.MoviePanelRightBorder_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MoviePanelRightBorder_Panel.Location = new System.Drawing.Point(433, 0);
-            this.MoviePanelRightBorder_Panel.Name = "MoviePanelRightBorder_Panel";
-            this.MoviePanelRightBorder_Panel.Size = new System.Drawing.Size(2, 617);
-            this.MoviePanelRightBorder_Panel.TabIndex = 1;
-            // 
-            // MoviePanelTopBorder_Panel
-            // 
-            this.MoviePanelTopBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.MoviePanelTopBorder_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MoviePanelTopBorder_Panel.Location = new System.Drawing.Point(2, 0);
-            this.MoviePanelTopBorder_Panel.Name = "MoviePanelTopBorder_Panel";
-            this.MoviePanelTopBorder_Panel.Size = new System.Drawing.Size(431, 2);
-            this.MoviePanelTopBorder_Panel.TabIndex = 2;
-            // 
-            // MoviePanelBottomBorder_Panel
-            // 
-            this.MoviePanelBottomBorder_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.MoviePanelBottomBorder_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MoviePanelBottomBorder_Panel.Location = new System.Drawing.Point(2, 615);
-            this.MoviePanelBottomBorder_Panel.Name = "MoviePanelBottomBorder_Panel";
-            this.MoviePanelBottomBorder_Panel.Size = new System.Drawing.Size(431, 2);
-            this.MoviePanelBottomBorder_Panel.TabIndex = 3;
             // 
             // MovieX_MainMenu
             // 
@@ -812,8 +813,8 @@ namespace MovieX
             this.Top_ExpandPanel.ResumeLayout(false);
             this.WindowState_Panel.ResumeLayout(false);
             this.TopLogo_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TopLogo_PictureBox)).EndInit();
             this.Movie_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TopLogo_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

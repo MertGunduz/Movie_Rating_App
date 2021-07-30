@@ -7,12 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using MovieX.Properties;
 
 namespace MovieX
 {
     public partial class MovieX_MainMenu : Form
     {
+        // SQL Connection Object
+        SqlConnection sqlConnection;
+
+        // Is Movie Watched Variables
+        string movieWatchedAnswer;
+        bool isMovieWatched;
+
         public MovieX_MainMenu()
         {
             InitializeComponent();
@@ -20,6 +28,8 @@ namespace MovieX
 
         private void MovieX_MainMenu_Load(object sender, EventArgs e)
         {
+            sqlConnection = new SqlConnection(Database.databaseString);
+
             // To Set The Movie_DataGridView
             this.movieX_MovieTableTableAdapter.Fill(this.movieXDataSet.MovieX_MovieTable);
 
@@ -294,6 +304,37 @@ namespace MovieX
         private void Minimize_Button_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        // Movie Database Insertion
+        private void AddMovie_Button_Click(object sender, EventArgs e)
+        {
+            // Sets The Word To Lower
+            movieWatchedAnswer = MovieWatched_TextBox.Text;
+            movieWatchedAnswer.ToLower();
+
+            if (MovieWatched_TextBox.Text == "yes" || MovieWatched_TextBox.Text == "true" || MovieWatched_TextBox.Text == "1" || MovieWatched_TextBox.Text == "i watched" || MovieWatched_TextBox.Text == "watched")
+            {
+                isMovieWatched = true;
+            }
+            else
+            {
+                isMovieWatched = false;
+            }
+
+            // Inserts Data To Table
+            sqlConnection.Open();
+            SqlCommand insertionCommand = new SqlCommand("Insert Into MovieX_MovieTable (Movie_Name, Movie_Category, Movie_URL, Movie_Watched, Movie_Personal_Rating) Values (@p1, @p2, @p3, @p4, @p5)", sqlConnection);
+            insertionCommand.Parameters.AddWithValue("@p1", MovieName_TextBox.Text);
+            insertionCommand.Parameters.AddWithValue("@p2", MovieCategory_TextBox.Text);
+            insertionCommand.Parameters.AddWithValue("@p3", MovieURL_TextBox.Text);
+            insertionCommand.Parameters.AddWithValue("@p4", isMovieWatched.ToString());
+            insertionCommand.Parameters.AddWithValue("@p5", MovieRating_TextBox.Text);
+            insertionCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+
+            // Updates Table
+            this.movieX_MovieTableTableAdapter.Fill(this.movieXDataSet.MovieX_MovieTable);
         }
 
         // Button UI Change Method
