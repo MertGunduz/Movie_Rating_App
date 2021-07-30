@@ -69,7 +69,6 @@ namespace MovieX
             this.LeftBorder_ExpandPanel = new System.Windows.Forms.Panel();
             this.Left_Panel = new System.Windows.Forms.Panel();
             this.Left_ExpandPanel = new System.Windows.Forms.Panel();
-            this.Navigation_Panel = new System.Windows.Forms.Panel();
             this.Top_Panel = new System.Windows.Forms.Panel();
             this.Top_ExpandPanel = new System.Windows.Forms.Panel();
             this.WindowState_Panel = new System.Windows.Forms.Panel();
@@ -84,6 +83,7 @@ namespace MovieX
             this.MoviePanelTopBorder_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelBottomBorder_Panel = new System.Windows.Forms.Panel();
             this.AddMovie_Button = new System.Windows.Forms.Button();
+            this.MyMovies_Button = new System.Windows.Forms.Button();
             this.Settings_Button = new System.Windows.Forms.Button();
             this.MyStatistics_Button = new System.Windows.Forms.Button();
             this.MyRatings_Button = new System.Windows.Forms.Button();
@@ -91,6 +91,8 @@ namespace MovieX
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.Exit_Button = new System.Windows.Forms.Button();
             this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.TopPicture_Panel = new System.Windows.Forms.Panel();
+            this.Navigation_Panel = new System.Windows.Forms.Panel();
             this.Mid_Panel.SuspendLayout();
             this.Mid_ExpandPanel.SuspendLayout();
             this.MidUserControl_Panel.SuspendLayout();
@@ -472,6 +474,7 @@ namespace MovieX
             // 
             this.Left_ExpandPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.Left_ExpandPanel.Controls.Add(this.Navigation_Panel);
+            this.Left_ExpandPanel.Controls.Add(this.MyMovies_Button);
             this.Left_ExpandPanel.Controls.Add(this.Settings_Button);
             this.Left_ExpandPanel.Controls.Add(this.MyStatistics_Button);
             this.Left_ExpandPanel.Controls.Add(this.MyRatings_Button);
@@ -481,14 +484,6 @@ namespace MovieX
             this.Left_ExpandPanel.Name = "Left_ExpandPanel";
             this.Left_ExpandPanel.Size = new System.Drawing.Size(200, 637);
             this.Left_ExpandPanel.TabIndex = 0;
-            // 
-            // Navigation_Panel
-            // 
-            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.Navigation_Panel.Location = new System.Drawing.Point(0, 1);
-            this.Navigation_Panel.Name = "Navigation_Panel";
-            this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
-            this.Navigation_Panel.TabIndex = 6;
             // 
             // Top_Panel
             // 
@@ -567,6 +562,7 @@ namespace MovieX
             // 
             // Movie_Panel
             // 
+            this.Movie_Panel.Controls.Add(this.TopPicture_Panel);
             this.Movie_Panel.Controls.Add(this.MoviePanelBottomBorder_Panel);
             this.Movie_Panel.Controls.Add(this.MoviePanelTopBorder_Panel);
             this.Movie_Panel.Controls.Add(this.MoviePanelRightBorder_Panel);
@@ -637,6 +633,30 @@ namespace MovieX
             this.AddMovie_Button.Click += new System.EventHandler(this.AddMovie_Button_Click);
             this.AddMovie_Button.MouseEnter += new System.EventHandler(this.AddMovie_Button_MouseEnter);
             this.AddMovie_Button.MouseLeave += new System.EventHandler(this.AddMovie_Button_MouseLeave);
+            // 
+            // MyMovies_Button
+            // 
+            this.MyMovies_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.MyMovies_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MyMovies_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MyMovies_Button.FlatAppearance.BorderSize = 0;
+            this.MyMovies_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.MyMovies_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.MyMovies_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MyMovies_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MyMovies_Button.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredWatchIcon;
+            this.MyMovies_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.MyMovies_Button.Location = new System.Drawing.Point(0, 150);
+            this.MyMovies_Button.Name = "MyMovies_Button";
+            this.MyMovies_Button.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.MyMovies_Button.Size = new System.Drawing.Size(200, 50);
+            this.MyMovies_Button.TabIndex = 7;
+            this.MyMovies_Button.Text = "My Movies";
+            this.MyMovies_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MyMovies_Button.UseVisualStyleBackColor = false;
+            this.MyMovies_Button.Click += new System.EventHandler(this.MyMovies_Button_Click);
+            this.MyMovies_Button.MouseEnter += new System.EventHandler(this.MyMovies_Button_MouseEnter);
+            this.MyMovies_Button.MouseLeave += new System.EventHandler(this.MyMovies_Button_MouseLeave);
             // 
             // Settings_Button
             // 
@@ -777,6 +797,22 @@ namespace MovieX
             this.TopLogo_PictureBox.MouseEnter += new System.EventHandler(this.TopLogo_PictureBox_MouseEnter);
             this.TopLogo_PictureBox.MouseLeave += new System.EventHandler(this.TopLogo_PictureBox_MouseLeave);
             // 
+            // TopPicture_Panel
+            // 
+            this.TopPicture_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPicture_Panel.Location = new System.Drawing.Point(2, 2);
+            this.TopPicture_Panel.Name = "TopPicture_Panel";
+            this.TopPicture_Panel.Size = new System.Drawing.Size(431, 230);
+            this.TopPicture_Panel.TabIndex = 4;
+            // 
+            // Navigation_Panel
+            // 
+            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.Navigation_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Navigation_Panel.Name = "Navigation_Panel";
+            this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
+            this.Navigation_Panel.TabIndex = 8;
+            // 
             // MovieX_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -861,7 +897,6 @@ namespace MovieX
         private MovieXDataSet movieXDataSet;
         private System.Windows.Forms.BindingSource movieXMovieTableBindingSource;
         private MovieXDataSetTableAdapters.MovieX_MovieTableTableAdapter movieX_MovieTableTableAdapter;
-        private System.Windows.Forms.Panel Navigation_Panel;
         private System.Windows.Forms.DataGridViewTextBoxColumn movieIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn movieNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn movieCategoryDataGridViewTextBoxColumn;
@@ -877,6 +912,9 @@ namespace MovieX
         private System.Windows.Forms.Panel MoviePanelLeftBorder_Panel;
         private System.Windows.Forms.Panel MoviePanelTopBorder_Panel;
         private System.Windows.Forms.Panel MoviePanelBottomBorder_Panel;
+        private System.Windows.Forms.Button MyMovies_Button;
+        private System.Windows.Forms.Panel TopPicture_Panel;
+        private System.Windows.Forms.Panel Navigation_Panel;
     }
 }
 

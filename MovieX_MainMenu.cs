@@ -20,7 +20,7 @@ namespace MovieX
             InitializeComponent();
         }
 
-        private void MovieX_MainMenu_Load(object sender, EventArgs e)
+        private void MovieX_MainMenu_Load(object sender, EventArgs e) 
         {
             sqlConnection = new SqlConnection(Database.databaseString);
 
@@ -28,7 +28,7 @@ namespace MovieX
             this.movieX_MovieTableTableAdapter.Fill(this.movieXDataSet.MovieX_MovieTable);
 
             // To Set The First Button
-            ButtonUIChange(Home_Button, MyRatings_Button, MyStatistics_Button, Settings_Button, Navigation_Panel);
+            ButtonUIChange(Home_Button, MyRatings_Button, MyStatistics_Button, MyMovies_Button, Settings_Button, Navigation_Panel);
         }
 
         // Logo Side (Hover-NonHover)
@@ -81,22 +81,27 @@ namespace MovieX
         // Button Click UI Changes 
         private void Home_Button_Click(object sender, EventArgs e)
         {
-            ButtonUIChange(Home_Button, MyRatings_Button, MyStatistics_Button, Settings_Button, Navigation_Panel);
+            ButtonUIChange(Home_Button, MyRatings_Button, MyStatistics_Button, MyMovies_Button, Settings_Button, Navigation_Panel);
         }
 
         private void MyRatings_Button_Click(object sender, EventArgs e)
         {
-            ButtonUIChange(MyRatings_Button, Home_Button, MyStatistics_Button, Settings_Button, Navigation_Panel);
+            ButtonUIChange(MyRatings_Button, Home_Button, MyStatistics_Button, MyMovies_Button, Settings_Button, Navigation_Panel);
         }
 
         private void MyStatistics_Button_Click(object sender, EventArgs e)
         {
-            ButtonUIChange(MyStatistics_Button, MyRatings_Button, Settings_Button, Home_Button, Navigation_Panel);
+            ButtonUIChange(MyStatistics_Button, MyRatings_Button, Home_Button, MyMovies_Button, Settings_Button, Navigation_Panel);
+        }
+
+        private void MyMovies_Button_Click(object sender, EventArgs e)
+        {
+            ButtonUIChange(MyMovies_Button, MyRatings_Button, MyStatistics_Button, Home_Button, Settings_Button, Navigation_Panel);
         }
 
         private void Settings_Button_Click(object sender, EventArgs e)
         {
-            ButtonUIChange(Settings_Button, MyRatings_Button, MyStatistics_Button, Home_Button, Navigation_Panel);
+            ButtonUIChange(Settings_Button, MyRatings_Button, MyStatistics_Button, MyMovies_Button, Home_Button, Navigation_Panel);
         }
 
         // Home Button (Hover-NonHover)
@@ -166,6 +171,19 @@ namespace MovieX
             {
                 Navigation_Panel.BackColor = Color.FromArgb(64, 186, 91);
             }
+        }
+
+        // My Movies Button (Hover-NonHover)
+        private void MyMovies_Button_MouseEnter(object sender, EventArgs e)
+        {
+            MyMovies_Button.Image = Resources.MovieX_HoveredWatchIcon;
+            MyMovies_Button.ForeColor = Color.FromArgb(84, 206, 111);
+        }
+
+        private void MyMovies_Button_MouseLeave(object sender, EventArgs e)
+        {
+            MyMovies_Button.Image = Resources.MovieX_NonHoveredWatchIcon;
+            MyMovies_Button.ForeColor = Color.FromArgb(64, 186, 91);
         }
 
         // Settings Button (Hover-NonHover)
@@ -332,7 +350,7 @@ namespace MovieX
         }
 
         // Button UI Change Method
-        private void ButtonUIChange(Button clickedButton, Button firstOtherButton, Button secondOtherButton, Button thirdOtherButton, Panel navigationPanel)
+        private void ButtonUIChange(Button clickedButton, Button firstOtherButton, Button secondOtherButton, Button thirdOtherButton, Button fourthOtherButton, Panel navigationPanel)
         {
             // Clicked Button
             clickedButton.BackColor = Color.FromArgb(38, 38, 38);
@@ -355,6 +373,11 @@ namespace MovieX
             thirdOtherButton.BackColor = Color.FromArgb(28, 28, 28);
             thirdOtherButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
             thirdOtherButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 28);
+
+            // Fourth Other Button
+            fourthOtherButton.BackColor = Color.FromArgb(28, 28, 28);
+            fourthOtherButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(28, 28, 28);
+            fourthOtherButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(28, 28, 28);
         }
     }
 }

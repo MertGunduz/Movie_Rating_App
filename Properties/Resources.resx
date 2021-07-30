@@ -142,6 +142,9 @@
   <data name="MovieX_HoveredTicketIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_HoveredTicketIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MovieX_HoveredWatchIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_HoveredWatchIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MovieX_NonHoveredAddMovieIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredAddMovieIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,5 +168,8 @@
   </data>
   <data name="MovieX_NonHoveredTicketIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MovieX_NonHoveredTicketIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovieX_NonHoveredWatchIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovieX_NonHoveredWatchIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

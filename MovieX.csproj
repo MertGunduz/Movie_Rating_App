@@ -150,6 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MovieX_TicketIcon.ico" />
+    <None Include="Resources\MovieX_NonHoveredWatchIcon.png" />
+    <None Include="Resources\MovieX_HoveredWatchIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
