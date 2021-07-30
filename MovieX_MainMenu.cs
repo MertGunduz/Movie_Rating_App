@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using MovieX.Properties;
+using System;
 using System.Data.SqlClient;
-using MovieX.Properties;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace MovieX
 {
@@ -246,7 +240,7 @@ namespace MovieX
         // Movie Watched TextBox (Hover-NonHover)
         private void MovieWatched_TextBox_MouseEnter(object sender, EventArgs e)
         {
-            MovieWatched_TextBox.ForeColor = Color.FromArgb(84, 206, 111);  
+            MovieWatched_TextBox.ForeColor = Color.FromArgb(84, 206, 111);
         }
 
         private void MovieWatched_TextBox_MouseLeave(object sender, EventArgs e)

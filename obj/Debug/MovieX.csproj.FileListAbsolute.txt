@@ -1,10 +1,10 @@
 C:\Users\u\source\repos\MovieX\bin\Debug\MovieX.exe.config
 C:\Users\u\source\repos\MovieX\bin\Debug\MovieX.exe
 C:\Users\u\source\repos\MovieX\bin\Debug\MovieX.pdb
+C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.csproj.AssemblyReference.cache
 C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.MovieX_MainMenu.resources
 C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.Properties.Resources.resources
 C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.csproj.GenerateResource.cache
 C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.csproj.CoreCompileInputs.cache
 C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.exe
 C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.pdb
-C:\Users\u\source\repos\MovieX\obj\Debug\MovieX.csproj.AssemblyReference.cache
