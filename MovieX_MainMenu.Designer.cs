@@ -82,6 +82,9 @@ namespace MovieX
             this.MoviePanelRightBorder_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelTopBorder_Panel = new System.Windows.Forms.Panel();
             this.MoviePanelBottomBorder_Panel = new System.Windows.Forms.Panel();
+            this.TopPicture_Panel = new System.Windows.Forms.Panel();
+            this.Navigation_Panel = new System.Windows.Forms.Panel();
+            this.WatchMovie_PictureBox = new System.Windows.Forms.PictureBox();
             this.AddMovie_Button = new System.Windows.Forms.Button();
             this.MyMovies_Button = new System.Windows.Forms.Button();
             this.Settings_Button = new System.Windows.Forms.Button();
@@ -91,8 +94,7 @@ namespace MovieX
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.Exit_Button = new System.Windows.Forms.Button();
             this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.TopPicture_Panel = new System.Windows.Forms.Panel();
-            this.Navigation_Panel = new System.Windows.Forms.Panel();
+            this.MovieWatchPanelHeader_Label = new System.Windows.Forms.Label();
             this.Mid_Panel.SuspendLayout();
             this.Mid_ExpandPanel.SuspendLayout();
             this.MidUserControl_Panel.SuspendLayout();
@@ -116,6 +118,8 @@ namespace MovieX
             this.WindowState_Panel.SuspendLayout();
             this.TopLogo_Panel.SuspendLayout();
             this.Movie_Panel.SuspendLayout();
+            this.TopPicture_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WatchMovie_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -611,6 +615,37 @@ namespace MovieX
             this.MoviePanelBottomBorder_Panel.Size = new System.Drawing.Size(431, 2);
             this.MoviePanelBottomBorder_Panel.TabIndex = 3;
             // 
+            // TopPicture_Panel
+            // 
+            this.TopPicture_Panel.Controls.Add(this.MovieWatchPanelHeader_Label);
+            this.TopPicture_Panel.Controls.Add(this.WatchMovie_PictureBox);
+            this.TopPicture_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPicture_Panel.Location = new System.Drawing.Point(2, 2);
+            this.TopPicture_Panel.Name = "TopPicture_Panel";
+            this.TopPicture_Panel.Size = new System.Drawing.Size(431, 230);
+            this.TopPicture_Panel.TabIndex = 4;
+            // 
+            // Navigation_Panel
+            // 
+            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
+            this.Navigation_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Navigation_Panel.Name = "Navigation_Panel";
+            this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
+            this.Navigation_Panel.TabIndex = 8;
+            // 
+            // WatchMovie_PictureBox
+            // 
+            this.WatchMovie_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WatchMovie_PictureBox.Image = global::MovieX.Properties.Resources.MovieX_NonHoveredPlayMovieIcon;
+            this.WatchMovie_PictureBox.Location = new System.Drawing.Point(0, 0);
+            this.WatchMovie_PictureBox.Name = "WatchMovie_PictureBox";
+            this.WatchMovie_PictureBox.Size = new System.Drawing.Size(431, 230);
+            this.WatchMovie_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.WatchMovie_PictureBox.TabIndex = 0;
+            this.WatchMovie_PictureBox.TabStop = false;
+            this.WatchMovie_PictureBox.MouseEnter += new System.EventHandler(this.WatchMovie_PictureBox_MouseEnter);
+            this.WatchMovie_PictureBox.MouseLeave += new System.EventHandler(this.WatchMovie_PictureBox_MouseLeave);
+            // 
             // AddMovie_Button
             // 
             this.AddMovie_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -797,21 +832,18 @@ namespace MovieX
             this.TopLogo_PictureBox.MouseEnter += new System.EventHandler(this.TopLogo_PictureBox_MouseEnter);
             this.TopLogo_PictureBox.MouseLeave += new System.EventHandler(this.TopLogo_PictureBox_MouseLeave);
             // 
-            // TopPicture_Panel
+            // MovieWatchPanelHeader_Label
             // 
-            this.TopPicture_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPicture_Panel.Location = new System.Drawing.Point(2, 2);
-            this.TopPicture_Panel.Name = "TopPicture_Panel";
-            this.TopPicture_Panel.Size = new System.Drawing.Size(431, 230);
-            this.TopPicture_Panel.TabIndex = 4;
-            // 
-            // Navigation_Panel
-            // 
-            this.Navigation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(186)))), ((int)(((byte)(91)))));
-            this.Navigation_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Navigation_Panel.Name = "Navigation_Panel";
-            this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
-            this.Navigation_Panel.TabIndex = 8;
+            this.MovieWatchPanelHeader_Label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MovieWatchPanelHeader_Label.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MovieWatchPanelHeader_Label.Location = new System.Drawing.Point(0, 0);
+            this.MovieWatchPanelHeader_Label.Name = "MovieWatchPanelHeader_Label";
+            this.MovieWatchPanelHeader_Label.Size = new System.Drawing.Size(431, 49);
+            this.MovieWatchPanelHeader_Label.TabIndex = 1;
+            this.MovieWatchPanelHeader_Label.Text = "Movie Watch Panel";
+            this.MovieWatchPanelHeader_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MovieWatchPanelHeader_Label.MouseEnter += new System.EventHandler(this.MovieWatchPanelHeader_Label_MouseEnter);
+            this.MovieWatchPanelHeader_Label.MouseLeave += new System.EventHandler(this.MovieWatchPanelHeader_Label_MouseLeave);
             // 
             // MovieX_MainMenu
             // 
@@ -850,6 +882,8 @@ namespace MovieX
             this.WindowState_Panel.ResumeLayout(false);
             this.TopLogo_Panel.ResumeLayout(false);
             this.Movie_Panel.ResumeLayout(false);
+            this.TopPicture_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WatchMovie_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TopLogo_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -915,6 +949,8 @@ namespace MovieX
         private System.Windows.Forms.Button MyMovies_Button;
         private System.Windows.Forms.Panel TopPicture_Panel;
         private System.Windows.Forms.Panel Navigation_Panel;
+        private System.Windows.Forms.PictureBox WatchMovie_PictureBox;
+        private System.Windows.Forms.Label MovieWatchPanelHeader_Label;
     }
 }
 

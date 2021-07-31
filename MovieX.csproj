@@ -61,10 +61,19 @@
     <Compile Include="MovieX_MainMenu.Designer.cs">
       <DependentUpon>MovieX_MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MovieX_MyRatings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieX_MyRatings.Designer.cs">
+      <DependentUpon>MovieX_MyRatings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MovieX_MainMenu.resx">
       <DependentUpon>MovieX_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieX_MyRatings.resx">
+      <DependentUpon>MovieX_MyRatings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +159,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MovieX_TicketIcon.ico" />
+    <None Include="Resources\MovieX_NonHoveredPlayMovieIcon.png" />
+    <None Include="Resources\MovieX_HoveredPlayMovieIcon.png" />
     <None Include="Resources\MovieX_NonHoveredWatchIcon.png" />
     <None Include="Resources\MovieX_HoveredWatchIcon.png" />
   </ItemGroup>

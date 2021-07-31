@@ -103,6 +103,16 @@ namespace MovieX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MovieX_HoveredPlayMovieIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_HoveredPlayMovieIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MovieX_HoveredRatingIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieX_HoveredRatingIcon", resourceCulture);
@@ -186,6 +196,16 @@ namespace MovieX.Properties {
         internal static System.Drawing.Bitmap MovieX_NonHoveredMinimizeIcon {
             get {
                 object obj = ResourceManager.GetObject("MovieX_NonHoveredMinimizeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MovieX_NonHoveredPlayMovieIcon {
+            get {
+                object obj = ResourceManager.GetObject("MovieX_NonHoveredPlayMovieIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,7 +20,7 @@ namespace MovieX
             InitializeComponent();
         }
 
-        private void MovieX_MainMenu_Load(object sender, EventArgs e) 
+        private void MovieX_MainMenu_Load(object sender, EventArgs e)
         {
             sqlConnection = new SqlConnection(Database.databaseString);
 
@@ -280,21 +280,37 @@ namespace MovieX
         // Movie Panel (Hover-NonHover)
         private void Movie_Panel_MouseEnter(object sender, EventArgs e)
         {
-            MoviePanelBottomBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
-            MoviePanelTopBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
-            MoviePanelLeftBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
-            MoviePanelRightBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
+            MoviePanelUIChangeEnter();
         }
 
         private void Movie_Panel_MouseLeave(object sender, EventArgs e)
         {
-            MoviePanelBottomBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
-            MoviePanelTopBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
-            MoviePanelLeftBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
-            MoviePanelRightBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
+            MoviePanelUIChangeLeave();
         }
 
-        // - ALGORITHMS & BACKEND -
+        // Watch Movie PictureBox (Hover-NonHover)
+        private void WatchMovie_PictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            MoviePanelUIChangeEnter();
+        }
+
+        private void WatchMovie_PictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            MoviePanelUIChangeLeave();
+        }
+
+        // Watch Movie Header Label (Hover-NonHover)
+        private void MovieWatchPanelHeader_Label_MouseEnter(object sender, EventArgs e)
+        {
+            MoviePanelUIChangeEnter();
+        }
+
+        private void MovieWatchPanelHeader_Label_MouseLeave(object sender, EventArgs e)
+        {
+            MoviePanelUIChangeLeave();
+        }
+
+        // |- ALGORITHMS & BACKEND -|
 
         // Takes The Movie URL & Applies To WebBrowser Navigation
         private void Movies_DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -347,6 +363,30 @@ namespace MovieX
 
             // Updates Table
             this.movieX_MovieTableTableAdapter.Fill(this.movieXDataSet.MovieX_MovieTable);
+        }
+
+        // |- METHODS -|
+
+        // Movie Panel Change Enter Method
+        private void MoviePanelUIChangeEnter()
+        {
+            MoviePanelBottomBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
+            MoviePanelTopBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
+            MoviePanelLeftBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
+            MoviePanelRightBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
+            MovieWatchPanelHeader_Label.ForeColor = Color.FromArgb(84, 206, 111);
+            WatchMovie_PictureBox.Image = Resources.MovieX_HoveredPlayMovieIcon;
+        }
+
+        // Movie Panel Change Leave Method
+        private void MoviePanelUIChangeLeave()
+        {
+            MoviePanelBottomBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
+            MoviePanelTopBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
+            MoviePanelLeftBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
+            MoviePanelRightBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
+            MovieWatchPanelHeader_Label.ForeColor = Color.FromArgb(64, 186, 91);
+            WatchMovie_PictureBox.Image = Resources.MovieX_NonHoveredPlayMovieIcon;
         }
 
         // Button UI Change Method
