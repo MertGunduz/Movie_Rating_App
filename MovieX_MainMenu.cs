@@ -310,6 +310,17 @@ namespace MovieX
             MoviePanelUIChangeLeave();
         }
 
+        // Watch Movie Description Label (Hover-NonHover)
+        private void MoviePanelDescription_Label_MouseEnter(object sender, EventArgs e)
+        {
+            MoviePanelUIChangeEnter();
+        }
+
+        private void MoviePanelDescription_Label_MouseLeave(object sender, EventArgs e)
+        {
+            MoviePanelUIChangeLeave();
+        }
+
         // |- ALGORITHMS & BACKEND -|
 
         // Takes The Movie URL & Applies To WebBrowser Navigation
@@ -375,6 +386,7 @@ namespace MovieX
             MoviePanelLeftBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
             MoviePanelRightBorder_Panel.BackColor = Color.FromArgb(84, 206, 111);
             MovieWatchPanelHeader_Label.ForeColor = Color.FromArgb(84, 206, 111);
+            MoviePanelDescription_Label.ForeColor = Color.FromArgb(84, 206, 111);
             WatchMovie_PictureBox.Image = Resources.MovieX_HoveredPlayMovieIcon;
         }
 
@@ -386,6 +398,7 @@ namespace MovieX
             MoviePanelLeftBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
             MoviePanelRightBorder_Panel.BackColor = Color.FromArgb(64, 186, 91);
             MovieWatchPanelHeader_Label.ForeColor = Color.FromArgb(64, 186, 91);
+            MoviePanelDescription_Label.ForeColor = Color.FromArgb(64, 186, 91);
             WatchMovie_PictureBox.Image = Resources.MovieX_NonHoveredPlayMovieIcon;
         }
 

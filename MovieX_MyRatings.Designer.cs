@@ -30,12 +30,23 @@ namespace MovieX
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieX_MyRatings));
+            this.Mid_Panel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // Mid_Panel
+            // 
+            this.Mid_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Mid_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Mid_Panel.Name = "Mid_Panel";
+            this.Mid_Panel.Size = new System.Drawing.Size(500, 500);
+            this.Mid_Panel.TabIndex = 0;
             // 
             // MovieX_MyRatings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(674, 550);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.ClientSize = new System.Drawing.Size(500, 500);
+            this.Controls.Add(this.Mid_Panel);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -47,5 +58,7 @@ namespace MovieX
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel Mid_Panel;
     }
 }

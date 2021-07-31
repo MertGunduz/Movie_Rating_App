@@ -95,6 +95,7 @@ namespace MovieX
             this.Exit_Button = new System.Windows.Forms.Button();
             this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
             this.MovieWatchPanelHeader_Label = new System.Windows.Forms.Label();
+            this.MoviePanelDescription_Label = new System.Windows.Forms.Label();
             this.Mid_Panel.SuspendLayout();
             this.Mid_ExpandPanel.SuspendLayout();
             this.MidUserControl_Panel.SuspendLayout();
@@ -566,6 +567,7 @@ namespace MovieX
             // 
             // Movie_Panel
             // 
+            this.Movie_Panel.Controls.Add(this.MoviePanelDescription_Label);
             this.Movie_Panel.Controls.Add(this.TopPicture_Panel);
             this.Movie_Panel.Controls.Add(this.MoviePanelBottomBorder_Panel);
             this.Movie_Panel.Controls.Add(this.MoviePanelTopBorder_Panel);
@@ -845,6 +847,18 @@ namespace MovieX
             this.MovieWatchPanelHeader_Label.MouseEnter += new System.EventHandler(this.MovieWatchPanelHeader_Label_MouseEnter);
             this.MovieWatchPanelHeader_Label.MouseLeave += new System.EventHandler(this.MovieWatchPanelHeader_Label_MouseLeave);
             // 
+            // MoviePanelDescription_Label
+            // 
+            this.MoviePanelDescription_Label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MoviePanelDescription_Label.Location = new System.Drawing.Point(2, 232);
+            this.MoviePanelDescription_Label.Name = "MoviePanelDescription_Label";
+            this.MoviePanelDescription_Label.Size = new System.Drawing.Size(431, 34);
+            this.MoviePanelDescription_Label.TabIndex = 5;
+            this.MoviePanelDescription_Label.Text = "Please select a movie from the table.";
+            this.MoviePanelDescription_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MoviePanelDescription_Label.MouseEnter += new System.EventHandler(this.MoviePanelDescription_Label_MouseEnter);
+            this.MoviePanelDescription_Label.MouseLeave += new System.EventHandler(this.MoviePanelDescription_Label_MouseLeave);
+            // 
             // MovieX_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -951,6 +965,7 @@ namespace MovieX
         private System.Windows.Forms.Panel Navigation_Panel;
         private System.Windows.Forms.PictureBox WatchMovie_PictureBox;
         private System.Windows.Forms.Label MovieWatchPanelHeader_Label;
+        private System.Windows.Forms.Label MoviePanelDescription_Label;
     }
 }
 
