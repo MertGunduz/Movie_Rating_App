@@ -360,6 +360,7 @@ namespace MovieX
             this.MovieRating_TextBox.Size = new System.Drawing.Size(402, 27);
             this.MovieRating_TextBox.TabIndex = 4;
             this.MovieRating_TextBox.Text = "  Movie Rating:";
+            this.MovieRating_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MovieRating_TextBox_MouseClick);
             this.MovieRating_TextBox.MouseEnter += new System.EventHandler(this.MovieRating_TextBox_MouseEnter);
             this.MovieRating_TextBox.MouseLeave += new System.EventHandler(this.MovieRating_TextBox_MouseLeave);
             // 
@@ -373,6 +374,7 @@ namespace MovieX
             this.MovieWatched_TextBox.Size = new System.Drawing.Size(402, 27);
             this.MovieWatched_TextBox.TabIndex = 3;
             this.MovieWatched_TextBox.Text = "  Movie Watched:";
+            this.MovieWatched_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MovieWatched_TextBox_MouseClick);
             this.MovieWatched_TextBox.MouseEnter += new System.EventHandler(this.MovieWatched_TextBox_MouseEnter);
             this.MovieWatched_TextBox.MouseLeave += new System.EventHandler(this.MovieWatched_TextBox_MouseLeave);
             // 
@@ -386,6 +388,7 @@ namespace MovieX
             this.MovieURL_TextBox.Size = new System.Drawing.Size(402, 27);
             this.MovieURL_TextBox.TabIndex = 2;
             this.MovieURL_TextBox.Text = "  Movie URL:";
+            this.MovieURL_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MovieURL_TextBox_MouseClick);
             this.MovieURL_TextBox.MouseEnter += new System.EventHandler(this.MovieURL_TextBox_MouseEnter);
             this.MovieURL_TextBox.MouseLeave += new System.EventHandler(this.MovieURL_TextBox_MouseLeave);
             // 
@@ -399,6 +402,7 @@ namespace MovieX
             this.MovieCategory_TextBox.Size = new System.Drawing.Size(402, 27);
             this.MovieCategory_TextBox.TabIndex = 1;
             this.MovieCategory_TextBox.Text = "  Movie Category:";
+            this.MovieCategory_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MovieCategory_TextBox_MouseClick);
             this.MovieCategory_TextBox.MouseEnter += new System.EventHandler(this.MovieCategory_TextBox_MouseEnter);
             this.MovieCategory_TextBox.MouseLeave += new System.EventHandler(this.MovieCategory_TextBox_MouseLeave);
             // 
@@ -412,6 +416,7 @@ namespace MovieX
             this.MovieName_TextBox.Size = new System.Drawing.Size(402, 27);
             this.MovieName_TextBox.TabIndex = 0;
             this.MovieName_TextBox.Text = "  Movie Name:";
+            this.MovieName_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MovieName_TextBox_MouseClick);
             this.MovieName_TextBox.MouseEnter += new System.EventHandler(this.MovieName_TextBox_MouseEnter);
             this.MovieName_TextBox.MouseLeave += new System.EventHandler(this.MovieName_TextBox_MouseLeave);
             // 

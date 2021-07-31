@@ -15,6 +15,9 @@ namespace MovieX
         string movieWatchedAnswer;
         bool isMovieWatched;
 
+        // Other Forms
+        MovieX_MyRatings movieX_MyRatings = new MovieX_MyRatings();
+
         public MovieX_MainMenu()
         {
             InitializeComponent();
@@ -87,6 +90,7 @@ namespace MovieX
         private void MyRatings_Button_Click(object sender, EventArgs e)
         {
             ButtonUIChange(MyRatings_Button, Home_Button, MyStatistics_Button, MyMovies_Button, Settings_Button, Navigation_Panel);
+            movieX_MyRatings.Show();
         }
 
         private void MyStatistics_Button_Click(object sender, EventArgs e)
@@ -343,6 +347,47 @@ namespace MovieX
         private void Minimize_Button_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        // Cleans The TextBoxes
+        private void MovieName_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MovieName_TextBox.Text == "  Movie Name:")
+            {
+                MovieName_TextBox.Clear();
+            }
+        }
+
+        private void MovieCategory_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MovieCategory_TextBox.Text == "  Movie Category:")
+            {
+                MovieCategory_TextBox.Clear();
+            }
+        }
+
+        private void MovieURL_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MovieURL_TextBox.Text == "  Movie URL:")
+            {
+                MovieURL_TextBox.Clear();
+            }
+        }
+
+        private void MovieWatched_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MovieWatched_TextBox.Text == "  Movie Watched:")
+            {
+                MovieWatched_TextBox.Clear();
+            }
+        }
+
+        private void MovieRating_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MovieRating_TextBox.Text == "  Movie Rating:")
+            {
+                MovieRating_TextBox.Clear();
+            }
         }
 
         // Movie Database Insertion
