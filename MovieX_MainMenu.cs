@@ -97,6 +97,7 @@ namespace MovieX
         private void MyStatistics_Button_Click(object sender, EventArgs e)
         {
             ButtonUIChange(MyStatistics_Button, MyRatings_Button, Home_Button, MyMovies_Button, Settings_Button, Navigation_Panel);
+            MovieX_MyStatistics.Show();
         }
 
         private void MyMovies_Button_Click(object sender, EventArgs e)

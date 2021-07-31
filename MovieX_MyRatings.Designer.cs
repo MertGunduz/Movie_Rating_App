@@ -37,6 +37,8 @@ namespace MovieX
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieX_MyRatings));
             this.Mid_Panel = new System.Windows.Forms.Panel();
             this.Movies_DataGridView = new System.Windows.Forms.DataGridView();
+            this.movieNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moviePersonalRatingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movieXMovieTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.movieXDataSet1 = new MovieX.MovieXDataSet();
             this.Top_Panel = new System.Windows.Forms.Panel();
@@ -47,8 +49,6 @@ namespace MovieX
             this.LogoHeader_Label = new System.Windows.Forms.Label();
             this.TopLogo_PictureBox = new System.Windows.Forms.PictureBox();
             this.movieX_MovieTableTableAdapter = new MovieX.MovieXDataSetTableAdapters.MovieX_MovieTableTableAdapter();
-            this.moviePersonalRatingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.movieNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mid_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Movies_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieXMovieTableBindingSource)).BeginInit();
@@ -113,6 +113,18 @@ namespace MovieX
             this.Movies_DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Movies_DataGridView.Size = new System.Drawing.Size(500, 436);
             this.Movies_DataGridView.TabIndex = 7;
+            // 
+            // movieNameDataGridViewTextBoxColumn
+            // 
+            this.movieNameDataGridViewTextBoxColumn.DataPropertyName = "Movie_Name";
+            this.movieNameDataGridViewTextBoxColumn.HeaderText = "Movie";
+            this.movieNameDataGridViewTextBoxColumn.Name = "movieNameDataGridViewTextBoxColumn";
+            // 
+            // moviePersonalRatingDataGridViewTextBoxColumn
+            // 
+            this.moviePersonalRatingDataGridViewTextBoxColumn.DataPropertyName = "Movie_Personal_Rating";
+            this.moviePersonalRatingDataGridViewTextBoxColumn.HeaderText = "Personal Rating";
+            this.moviePersonalRatingDataGridViewTextBoxColumn.Name = "moviePersonalRatingDataGridViewTextBoxColumn";
             // 
             // movieXMovieTableBindingSource
             // 
@@ -223,18 +235,6 @@ namespace MovieX
             // movieX_MovieTableTableAdapter
             // 
             this.movieX_MovieTableTableAdapter.ClearBeforeFill = true;
-            // 
-            // moviePersonalRatingDataGridViewTextBoxColumn
-            // 
-            this.moviePersonalRatingDataGridViewTextBoxColumn.DataPropertyName = "Movie_Personal_Rating";
-            this.moviePersonalRatingDataGridViewTextBoxColumn.HeaderText = "Personal Rating";
-            this.moviePersonalRatingDataGridViewTextBoxColumn.Name = "moviePersonalRatingDataGridViewTextBoxColumn";
-            // 
-            // movieNameDataGridViewTextBoxColumn
-            // 
-            this.movieNameDataGridViewTextBoxColumn.DataPropertyName = "Movie_Name";
-            this.movieNameDataGridViewTextBoxColumn.HeaderText = "Movie";
-            this.movieNameDataGridViewTextBoxColumn.Name = "movieNameDataGridViewTextBoxColumn";
             // 
             // MovieX_MyRatings
             // 

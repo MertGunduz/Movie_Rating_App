@@ -81,6 +81,9 @@
     <EmbeddedResource Include="MovieX_MyRatings.resx">
       <DependentUpon>MovieX_MyRatings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MovieX_MyStatistics.resx">
+      <DependentUpon>MovieX_MyStatistics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
