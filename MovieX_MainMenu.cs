@@ -18,6 +18,7 @@ namespace MovieX
         // Other Forms
         MovieX_MyRatings movieX_MyRatings = new MovieX_MyRatings();
         MovieX_MyStatistics MovieX_MyStatistics = new MovieX_MyStatistics();
+        MovieX_MyMovies MovieX_MyMovies = new MovieX_MyMovies();
 
         public MovieX_MainMenu()
         {
@@ -103,6 +104,7 @@ namespace MovieX
         private void MyMovies_Button_Click(object sender, EventArgs e)
         {
             ButtonUIChange(MyMovies_Button, MyRatings_Button, MyStatistics_Button, Home_Button, Settings_Button, Navigation_Panel);
+            MovieX_MyMovies.Show();
         }
 
         private void Settings_Button_Click(object sender, EventArgs e)
