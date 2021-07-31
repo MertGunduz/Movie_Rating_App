@@ -55,11 +55,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MovieXDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MovieXDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MovieXDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="MovieX_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +66,12 @@
     </Compile>
     <Compile Include="MovieX_MyRatings.Designer.cs">
       <DependentUpon>MovieX_MyRatings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieX_MyStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieX_MyStatistics.Designer.cs">
+      <DependentUpon>MovieX_MyStatistics.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,17 +96,6 @@
     </None>
     <None Include="MovieXDataSet.xss">
       <DependentUpon>MovieXDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MovieXDataSet1.xsc">
-      <DependentUpon>MovieXDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="MovieXDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MovieXDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MovieXDataSet1.xss">
-      <DependentUpon>MovieXDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

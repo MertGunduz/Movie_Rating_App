@@ -17,6 +17,7 @@ namespace MovieX
 
         // Other Forms
         MovieX_MyRatings movieX_MyRatings = new MovieX_MyRatings();
+        MovieX_MyStatistics MovieX_MyStatistics = new MovieX_MyStatistics();
 
         public MovieX_MainMenu()
         {
