@@ -9,16 +9,16 @@
 
 ## MovieX Main Menu
 
-![MovieX_MainMenu](https://user-images.githubusercontent.com/65850970/127744782-c01d8ab8-dead-4d50-8d19-2a67396550bb.JPG)
+![MovieX_MainMenu](https://user-images.githubusercontent.com/65850970/130220211-12ab8bb9-3949-47a4-b0ea-2722b19754e1.PNG)
 
-## MovieX My Personal Rankings Menu
+## MovieX My Ratings Menu
 
-![MovieX_PersonalRankings](https://user-images.githubusercontent.com/65850970/127744788-44a0592f-d30f-4d75-9be0-d07be5f6ad53.JPG)
+![MovieX_MyRatings](https://user-images.githubusercontent.com/65850970/130220222-551482b0-3b50-42c0-8c2e-97fbba6f896a.PNG)
 
 ## MovieX My Statistics Menu
 
-![MovieX_MyStatistics](https://user-images.githubusercontent.com/65850970/127744803-0b8073ea-8619-46fa-84f4-c6aff9af788f.JPG)
+![MovieX_MyStatistics](https://user-images.githubusercontent.com/65850970/130220245-c0ae9f97-bb3d-45ce-baf2-9a99d8ea25fb.PNG)
 
 ## MovieX Watch Movie Menu
 
-![MovieX_WatchMovie](https://user-images.githubusercontent.com/65850970/127744811-1aa99c41-ed01-46a5-8bf2-091d2e69bc6e.JPG)
+![MovieX_WatchMovie](https://user-images.githubusercontent.com/65850970/130220253-37d6c14a-a3cc-4d94-acca-193c8cac2447.PNG)
